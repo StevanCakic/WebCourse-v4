@@ -2,7 +2,6 @@
 <html>
 
 <head>
-
 </head>
 
 <body>
@@ -21,13 +20,13 @@
         <!-- without a trailing slash; it's the same thing -->
         <input type="color" />
         <input type="file" />
-        <input type="number" />
+        <input type="number" min=1 max=10 step=2 />
+        <input type="range" value="90" step=10> 
         <input type="datetime-local" />
         <input type="radio" name="radio_btn" />
         <input type="radio" name="radio_btn" />
         <input type="checkbox" />
     </div>
-
     <!-- textarea -->
     <div>
         <textarea></textarea>
@@ -41,12 +40,10 @@
             <option value="san-francisco">San Francisco</option>
         </select>
     </div>
-
     <!-- buttons -->
     <div>
         <button>Click me! I don't do anything</button>
     </div>
-
     <!-- table -->
     <table>
         <tr>
@@ -58,11 +55,5 @@
             <td>(1,1)</td>
         </tr>
     </table>
-
-    <!-- for fun -->
-    <div>
-        <marquee>This is a really old feature that only works in some browsers. You should never use it for a real website.</marquee>
-    </div>
 </body>
-
 </html>
