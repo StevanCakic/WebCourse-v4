@@ -1,36 +1,52 @@
 <html>
-<head>
+  <head>
     <title>Naslov</title>
-</head>
-<body>
+  </head>
+  <body>
     <a href="#C4">Jump to Chapter 4</a>
-    <form>  
-        <label for="inp_pass">Password:</label><br>
-        <input name="inp_pass" id="inp_pass" placeholder="Unesite password" type="password"><br> Last name:<br>
-        <input type="text" name="lastname" value="Mouse"><br>
-        <br> Opcija 1<input type="radio" name="opcija" value="Opcija 1">
-         Opcija 2<input type="radio" name="opcija" value="Opcija 2"><br>       
-        Task 1
-        <input type="checkbox" name="task1" value="Task 2"> Task 2<input type="checkbox" name="task2" value="Task 2"><br>
-        <select name="cars" size="2" multiple>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="fiat">Fiat</option>
-            <option selected value="audi">Audi</option>
-        </select>
-        <br>
-        <textarea name="message" rows="10" cols="40" placeholder="Enter your name"></textarea>
-        <br>
-        <button type="button" onclick="alert('Hello World!')">
-            Click Me!
-        </button>
-        <br>
-        <video controls autoplay>
-            <source src="mov_bbb.mp4">
-        </video>
-        <br>      
-        <br><br>
-        <input type="submit" value="Submit">
+    <form>
+      <label for="inp_pass">Password:</label><br />
+      <input
+        name="inp_pass"
+        id="inp_pass"
+        placeholder="Unesite password"
+        type="password"
+      /><br />
+      Last name:<br />
+      <input type="text" name="lastname" value="Mouse" /><br />
+      <br />
+      Opcija 1<input type="radio" name="opcija" value="Opcija 1" /> Opcija
+      2<input type="radio" name="opcija" value="Opcija 2" /><br />
+      Task 1
+      <input type="checkbox" name="task1" value="Task 2" /> Task 2<input
+        type="checkbox"
+        name="task2"
+        value="Task 2"
+      /><br />
+      <select name="cars" size="2" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option selected value="audi">Audi</option>
+      </select>
+      <br />
+      <textarea
+        name="message"
+        rows="10"
+        cols="40"
+        placeholder="Enter your name"
+      ></textarea>
+      <br />
+      <button type="button" onclick="alert('Hello World!')">
+        Click Me!
+      </button>
+      <br />
+      <video controls autoplay poster="../code-1/images/slika1.jpg">
+        <source src="mov_bbb.mp4" />
+      </video>
+      <br />
+      <br /><br />
+      <input type="submit" value="Submit" />
     </form>
     <!--
     <iframe name="iframe_a" style="border:none;width:100%;height:100%" src="index.html" 
@@ -38,12 +54,20 @@
     -->
     <p>© &euro;</p>
     <div class="post-1">
-        <p>
-                Contrary to popular belief, Lorem Ipsum is not simply.
-        </p>
+      <p>
+        Contrary to popular belief, Lorem Ipsum is not simply.
+      </p>
     </div>
-    <div class="post-2">
-    </div>
+    <div class="post-2"></div>
     <h2 id="C4">Chapter 4</h2>
-</body>
+
+    <!-- IFRAME -->
+    <a href="https://www.ucg.ac.me/" target="iframe_a"
+      >Otvara unutar stranice, u iframe</a
+    >
+    <a href="https://www.ucg.ac.me/" target="blank">Otvara u novom tabu</a>
+
+    <iframe height="300px" width="50%" name="iframe_a"></iframe>
+    <!-- IFRAME -->
+  </body>
 </html>
