@@ -9,12 +9,9 @@ body{
     align-items: center;
     font-family: consolas;
 }
-
 img {
     width:150px;
-    
 }
-
 .container {
     width:1000px;
     position: relative;
