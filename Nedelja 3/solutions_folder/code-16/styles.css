@@ -40,7 +40,7 @@ img {
     align-items: center;
     z-index:1;
     /*Ovo se tek kasnije dodaje*/
-    /*transform: translateY(100px); */
+    transform: translateY(100px); 
 }
 
 /* Korak 3*/
@@ -54,7 +54,7 @@ img {
     box-sizing: border-box;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
     /* Ovo naknadno odkomentarisati*/
-    /*transform: translateY(-150px); */
+    transform: translateY(-150px); 
 }
 
 /* Korak 4*/
