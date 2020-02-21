@@ -8,7 +8,7 @@ var zbir = "Zbir je: " + add(3,4);
 console.log(zbir);
 
 // Primjer 2
-
+sub();
 var sub = function(a,b){
   return a - b;
 }
