@@ -41,3 +41,9 @@ console.log(list);
 const obj = { name: "Ime" };
 obj.name = "Ime2";// Ok
 console.log(obj.name);
+
+// Object freeze
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze
+
+// Object seal
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/seal

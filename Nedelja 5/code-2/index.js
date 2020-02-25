@@ -1,7 +1,7 @@
 // Primjer 1
-/*
+
 function bar() {
-  var foo = "baz";
+  var foo = "val_foo";
 }
 
 function baz(foo) {
@@ -12,24 +12,25 @@ function baz(foo) {
 baz();
 
 console.log(foo);
-console.log(bam);*/
+console.log(bam);
 
 // sta ako dodamo "use strict";
 // "use strict"; //na nivou bloka ! ne mora na vrhu fajla
 
 // Primjer 2
-
-var foo = "bar";
+/*
+var foo = "val_foo";
 function bar(){
   
-  var foo = "baz";
+  var foo = "val_local_foo";
 
   function baz(foo){
-    var foo = "bam" + foo;
+    var foo = "val_foo_inner " + foo;
     console.log(foo);
-    var bam = "yay";
+    var bam = "val_bam";
     return bam;
   }
+
   var result = baz("abc");
   console.log(result);
   baz();
@@ -44,11 +45,12 @@ console.log(foo);
 //console.log(baz);
 //baz(); //Error
 
+*/
 // Primjer 3
-
+/*
 const foo2 = function bar() {
   
-  var foo = "baz";
+  var foo = "val_foo";
 
   function baz(foo){
     foo = bar;
@@ -59,3 +61,4 @@ const foo2 = function bar() {
 console.log(foo2);
 foo2();
 // bar(); //Error
+*/
