@@ -15,7 +15,7 @@ let noneOnce = {
 };
 
 outer.addEventListener('click', noneOnceHandler);
-// outer.addEventListener('click', onceHandler, once);
+//outer.addEventListener('click', onceHandler, once);
 // outer.addEventListener('click', function(e) { captureHandler(e, "outer")}, capture);
 
 inner.addEventListener('click', noneCaptureHandler);
@@ -32,6 +32,6 @@ function captureHandler(event, elem ) {
     alert(`${elem}, capture, not-default`);
 }
 function noneCaptureHandler(event) {
-    event.stopPropagation();
+    
     alert('inner, none-capture, default');
 }
