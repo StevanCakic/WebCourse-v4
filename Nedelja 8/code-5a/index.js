@@ -1,11 +1,11 @@
-let promise = new Promise(function(resolve, reject) {
-    setTimeout(function() {
+let promise = new Promise(function (resolve, reject) {
+    setTimeout(function () {
         reject('We are all going to die');
     }, 250);
 });
 
-promise.then(function success(data) {
+promise.then(data => {
     console.log(data);
-}, function error(data) {
-    console.error(data);
-});
+}).catch(error => {
+    console.error(error);
+})

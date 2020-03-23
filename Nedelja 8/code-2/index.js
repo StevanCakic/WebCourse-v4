@@ -21,10 +21,11 @@ function myFunction1(xhttp) {
 
 function myFunction2(xhttp) {
     let xmlDoc = xhttp.responseXML;
+    console.log(xmlDoc)
     let txt = "";
     let x = xmlDoc.getElementsByTagName("ARTIST");
     for (let i = 0; i < x.length; i++) {
-        txt = txt + x[i].childNodes[0].textContent + "<br>";
+        txt = txt + x[i].textContent + "<br>";
     }
     console.log(xhttp.getResponseHeader("last-modified"));
     $("#demo").innerHTML = txt;
@@ -37,9 +38,9 @@ function createTable (xhttp) {
     let x = xmlDoc.getElementsByTagName("CD");
     for (let i = 0; i < x.length; i++) {
         table += "<tr><td>" +
-            x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+            x[i].getElementsByTagName("ARTIST")[0].textContent +
             "</td><td>" +
-            x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+            x[i].getElementsByTagName("TITLE")[0].textContent +
             "</td></tr>";
     }
     $("#demo").innerHTML = table + "</table>";

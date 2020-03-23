@@ -19,11 +19,11 @@ function myFunction(xml, i) {
     len = x.length;
     document.getElementById("showCD").innerHTML =
         "Artist: " +
-        x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+        x[i].getElementsByTagName("ARTIST")[0].textContent +
         "<br>Title: " +
-        x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+        x[i].getElementsByTagName("TITLE")[0].textContent +
         "<br>Year: " +
-        x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue;
+        x[i].getElementsByTagName("YEAR")[0].textContent;
 }
 
 function next() {

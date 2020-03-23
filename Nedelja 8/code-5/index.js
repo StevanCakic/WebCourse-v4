@@ -8,4 +8,4 @@ console.log(promise);
 
 promise.then(function (data) {
     console.log(data);
-});
+})
