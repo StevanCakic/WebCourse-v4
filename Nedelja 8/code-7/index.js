@@ -4,19 +4,9 @@ document.getElementById('getPosts').addEventListener('click', getPosts);
 document.getElementById('addPost').addEventListener('submit', addPost);
 
 function getText() {
-    // fetch('sample.txt')
-    // .then(function(res){
-    //   return res.text();
-    // })
-    // .then(function(data){
-    //   console.log(data);
-    // });
-
     fetch('sample.txt')
-        .then((res) => res.text())
-        .then((data) => {
-            document.getElementById('output').innerHTML = data;
-        })
+        .then(res => res.text())
+        .then(data => document.getElementById('output').innerHTML = data)
         .catch((err) => console.log(err))
 }
 
@@ -63,12 +53,14 @@ function addPost(e) {
 
     fetch('https://jsonplaceholder.typicode.com/posts', {
         method: 'POST',
+        body: JSON.stringify({
+            title,
+            body
+        }),
         headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        },// nekad saljemo serveru auth da bismo mogli da bi server prihvatio nas request
-        body: JSON.stringify({ title, body })
+            "Content-type": "application/json; charset=UTF-8"
+        }
     })
-        .then((res) => res.json())
-        .then((data) => console.log(data))
+        .then(response => response.json())
+        .then(json => console.log(json))
 }
