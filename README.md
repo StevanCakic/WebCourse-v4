@@ -31,3 +31,7 @@
 ## Nedelja 8
 - Ajax, Promises
 - Fetch
+
+## Nedelja 9
+- OOP
+- Iteratori, generatori, async/await
