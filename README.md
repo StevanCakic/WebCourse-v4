@@ -34,4 +34,4 @@
 
 ## Nedelja 9
 - OOP
-- Iteratori, generatori, async/await
+- Iteratori, generatori, async/await, dekoratori
